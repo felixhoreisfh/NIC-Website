@@ -5,12 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NIC – Der Studierendenclub</title>
   <meta name="description" content="NIC ist der Studierendenclub für alle, die Netzwerk, Ideen und Community suchen. Werde Teil unserer Community.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%236d28d9'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Arial, sans-serif' font-weight='800' fill='white' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="noise"></div>
+
   <header class="site-header" id="header">
     <div class="header-inner">
-      <a href="#top" class="logo">NIC<span class="logo-dot">.</span></a>
+      <a href="#top" class="logo">
+        <span class="logo-mark">N</span>
+        NIC
+      </a>
 
       <nav class="nav" id="nav">
         <a href="#about">Über uns</a>
@@ -29,17 +38,24 @@
 
   <main id="top">
     <section id="hero" class="hero">
-      <div class="hero-glow"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+
       <div class="hero-content reveal">
-        <p class="eyebrow">Der Studierendenclub</p>
+        <span class="badge">✦ Für Studierende, von Studierenden</span>
         <h1>Netzwerk. Ideen. <span class="text-gradient">Community.</span></h1>
         <p class="hero-sub">
           NIC bringt Studierende zusammen, die etwas bewegen wollen – mit Events,
           spannenden Projekten und einem Netzwerk, das über das Studium hinausträgt.
         </p>
         <div class="hero-actions">
-          <a href="#join" class="btn btn-primary">Jetzt Mitglied werden</a>
-          <a href="#about" class="btn btn-ghost">Mehr erfahren</a>
+          <a href="#join" class="btn btn-primary btn-lg">
+            Jetzt Mitglied werden
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#about" class="btn btn-ghost btn-lg">Mehr erfahren</a>
         </div>
       </div>
 
@@ -63,6 +79,23 @@
       </div>
     </section>
 
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>Networking</span><span>·</span>
+        <span>Case Studies</span><span>·</span>
+        <span>Workshops</span><span>·</span>
+        <span>Mentoring</span><span>·</span>
+        <span>Karriere-Talks</span><span>·</span>
+        <span>Community</span><span>·</span>
+        <span>Networking</span><span>·</span>
+        <span>Case Studies</span><span>·</span>
+        <span>Workshops</span><span>·</span>
+        <span>Mentoring</span><span>·</span>
+        <span>Karriere-Talks</span><span>·</span>
+        <span>Community</span><span>·</span>
+      </div>
+    </div>
+
     <section id="about" class="section">
       <div class="section-head reveal">
         <p class="eyebrow">Über uns</p>
@@ -77,7 +110,8 @@
           neue Leute kennenlernen oder einfach mal über den Tellerrand schauen willst –
           bei uns bist du richtig.
         </p>
-        <div class="about-card">
+        <div class="about-card tilt">
+          <div class="about-card-glow"></div>
           <h3>Unsere Mission</h3>
           <p>Wir schaffen einen Raum, in dem Studierende Verantwortung übernehmen,
              voneinander lernen und gemeinsam Projekte auf die Beine stellen, die
@@ -92,17 +126,17 @@
         <h2>Kommende Events</h2>
       </div>
       <div class="cards reveal">
-        <article class="card">
+        <article class="card tilt">
           <div class="card-date"><span>18</span>SEP</div>
           <h3>Networking Night</h3>
           <p>Ungezwungenes Kennenlernen mit Mitgliedern, Alumni und Partnerunternehmen.</p>
         </article>
-        <article class="card">
+        <article class="card tilt">
           <div class="card-date"><span>04</span>OKT</div>
           <h3>Case Study Workshop</h3>
           <p>In Teams reale Business-Cases lösen und direktes Feedback von Profis bekommen.</p>
         </article>
-        <article class="card">
+        <article class="card tilt">
           <div class="card-date"><span>21</span>NOV</div>
           <h3>Karriere-Talk</h3>
           <p>Alumni erzählen von ihrem Weg nach dem Studium – inklusive Fragerunde.</p>
@@ -116,23 +150,31 @@
         <h2>Warum NIC?</h2>
       </div>
       <div class="features reveal">
-        <div class="feature">
-          <div class="feature-icon">🤝</div>
+        <div class="feature tilt">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M17 20h2a2 2 0 0 0 2-2v-2a4 4 0 0 0-3-3.87M13 3.13a4 4 0 0 1 0 7.75M3 20v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
           <h3>Starkes Netzwerk</h3>
           <p>Kontakte zu Mitgliedern, Alumni und Unternehmen, die dich über das Studium hinaus begleiten.</p>
         </div>
-        <div class="feature">
-          <div class="feature-icon">🚀</div>
+        <div class="feature tilt">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09ZM12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 19 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2Zm0 0 4-4M9 12 5 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
           <h3>Eigene Projekte</h3>
           <p>Bring eigene Ideen ein und setze sie mit Unterstützung des Clubs tatsächlich um.</p>
         </div>
-        <div class="feature">
-          <div class="feature-icon">🎓</div>
+        <div class="feature tilt">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="m22 10-10-5L2 10l10 5 10-5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 12v5c0 1.5 2.5 3 6 3s6-1.5 6-3v-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
           <h3>Praxisnähe</h3>
           <p>Workshops und Cases direkt mit Unternehmen – näher an der Praxis geht's kaum.</p>
         </div>
-        <div class="feature">
-          <div class="feature-icon">🎉</div>
+        <div class="feature tilt">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M5.8 11.3 2 22l10.7-3.79M4 3h.01M22 8h.01M15 2h.01M22 20h.01M22.001 8c0 4.97-4.03 9-9.001 9-4.97 0-9-4.03-9-9s4.03-9 9-9c4.97 0 9.001 4.03 9.001 9Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
           <h3>Community</h3>
           <p>Events, die verbinden – von entspannt bis richtig gut vorbereitet.</p>
         </div>
@@ -140,10 +182,11 @@
     </section>
 
     <section id="join" class="join">
+      <div class="join-glow"></div>
       <div class="join-content reveal">
         <h2>Werde Teil von NIC</h2>
         <p>Die Mitgliedschaft ist kostenlos und in wenigen Minuten erledigt.</p>
-        <a href="#contact" class="btn btn-primary btn-lg">Jetzt anmelden</a>
+        <a href="#contact" class="btn btn-light btn-lg">Jetzt anmelden</a>
       </div>
     </section>
 

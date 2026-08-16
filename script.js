@@ -84,6 +84,25 @@ const statsObserver = new IntersectionObserver(
 
 statNumbers.forEach((el) => statsObserver.observe(el));
 
+// Subtle 3D tilt on hover for cards
+const tiltEls = document.querySelectorAll(".tilt");
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+if (!prefersReducedMotion) {
+  tiltEls.forEach((el) => {
+    el.addEventListener("mousemove", (event) => {
+      const rect = el.getBoundingClientRect();
+      const x = (event.clientX - rect.left) / rect.width - 0.5;
+      const y = (event.clientY - rect.top) / rect.height - 0.5;
+      el.style.transform = `perspective(600px) rotateY(${x * 8}deg) rotateX(${-y * 8}deg) translateY(-2px)`;
+    });
+
+    el.addEventListener("mouseleave", () => {
+      el.style.transform = "";
+    });
+  });
+}
+
 // Contact form (client-side only, no backend wired up)
 const contactForm = document.getElementById("contactForm");
 const formStatus = document.getElementById("formStatus");
