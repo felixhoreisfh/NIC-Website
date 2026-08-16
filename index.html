@@ -3,37 +3,189 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIC</title>
+  <title>NIC – Der Studierendenclub</title>
+  <meta name="description" content="NIC ist der Studierendenclub für alle, die Netzwerk, Ideen und Community suchen. Werde Teil unserer Community.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>NIC</h1>
-    <nav>
-      <a href="#about">Über uns</a>
-      <a href="#contact">Kontakt</a>
-    </nav>
+  <header class="site-header" id="header">
+    <div class="header-inner">
+      <a href="#top" class="logo">NIC<span class="logo-dot">.</span></a>
+
+      <nav class="nav" id="nav">
+        <a href="#about">Über uns</a>
+        <a href="#events">Events</a>
+        <a href="#why">Warum NIC</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+
+      <a href="#join" class="btn btn-primary btn-nav">Mitglied werden</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
-  <main>
-    <section id="hero">
-      <h2>Willkommen</h2>
-      <p>Dies ist die Startseite der NIC-Website.</p>
+  <main id="top">
+    <section id="hero" class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Der Studierendenclub</p>
+        <h1>Netzwerk. Ideen. <span class="text-gradient">Community.</span></h1>
+        <p class="hero-sub">
+          NIC bringt Studierende zusammen, die etwas bewegen wollen – mit Events,
+          spannenden Projekten und einem Netzwerk, das über das Studium hinausträgt.
+        </p>
+        <div class="hero-actions">
+          <a href="#join" class="btn btn-primary">Jetzt Mitglied werden</a>
+          <a href="#about" class="btn btn-ghost">Mehr erfahren</a>
+        </div>
+      </div>
+
+      <div class="stats reveal">
+        <div class="stat">
+          <span class="stat-number" data-count="250">0</span>
+          <span class="stat-label">Mitglieder</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-count="20">0</span>
+          <span class="stat-label">Events pro Jahr</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-count="8">0</span>
+          <span class="stat-label">Partner-Unternehmen</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-count="5">0</span>
+          <span class="stat-label">Jahre aktiv</span>
+        </div>
+      </div>
     </section>
 
-    <section id="about">
-      <h2>Über uns</h2>
-      <p>Hier steht ein Text über euch.</p>
+    <section id="about" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow">Über uns</p>
+        <h2>Was ist NIC?</h2>
+      </div>
+      <div class="about-grid reveal">
+        <p class="about-text">
+          NIC ist ein studentisch geführter Club für alle, die während des Studiums
+          mehr wollen als nur Vorlesungen: Wir organisieren Networking-Abende, Workshops
+          mit Unternehmen, Case-Study-Wettbewerbe und gesellige Formate – von motivierten
+          Studierenden, für motivierte Studierende. Egal ob du dich fachlich weiterentwickeln,
+          neue Leute kennenlernen oder einfach mal über den Tellerrand schauen willst –
+          bei uns bist du richtig.
+        </p>
+        <div class="about-card">
+          <h3>Unsere Mission</h3>
+          <p>Wir schaffen einen Raum, in dem Studierende Verantwortung übernehmen,
+             voneinander lernen und gemeinsam Projekte auf die Beine stellen, die
+             über den Uni-Alltag hinausgehen.</p>
+        </div>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>Kontakt</h2>
-      <p>E-Mail: info@example.com</p>
+    <section id="events" class="section section-alt">
+      <div class="section-head reveal">
+        <p class="eyebrow">Termine</p>
+        <h2>Kommende Events</h2>
+      </div>
+      <div class="cards reveal">
+        <article class="card">
+          <div class="card-date"><span>18</span>SEP</div>
+          <h3>Networking Night</h3>
+          <p>Ungezwungenes Kennenlernen mit Mitgliedern, Alumni und Partnerunternehmen.</p>
+        </article>
+        <article class="card">
+          <div class="card-date"><span>04</span>OKT</div>
+          <h3>Case Study Workshop</h3>
+          <p>In Teams reale Business-Cases lösen und direktes Feedback von Profis bekommen.</p>
+        </article>
+        <article class="card">
+          <div class="card-date"><span>21</span>NOV</div>
+          <h3>Karriere-Talk</h3>
+          <p>Alumni erzählen von ihrem Weg nach dem Studium – inklusive Fragerunde.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="why" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow">Vorteile</p>
+        <h2>Warum NIC?</h2>
+      </div>
+      <div class="features reveal">
+        <div class="feature">
+          <div class="feature-icon">🤝</div>
+          <h3>Starkes Netzwerk</h3>
+          <p>Kontakte zu Mitgliedern, Alumni und Unternehmen, die dich über das Studium hinaus begleiten.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🚀</div>
+          <h3>Eigene Projekte</h3>
+          <p>Bring eigene Ideen ein und setze sie mit Unterstützung des Clubs tatsächlich um.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🎓</div>
+          <h3>Praxisnähe</h3>
+          <p>Workshops und Cases direkt mit Unternehmen – näher an der Praxis geht's kaum.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🎉</div>
+          <h3>Community</h3>
+          <p>Events, die verbinden – von entspannt bis richtig gut vorbereitet.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="join" class="join">
+      <div class="join-content reveal">
+        <h2>Werde Teil von NIC</h2>
+        <p>Die Mitgliedschaft ist kostenlos und in wenigen Minuten erledigt.</p>
+        <a href="#contact" class="btn btn-primary btn-lg">Jetzt anmelden</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow">Kontakt</p>
+        <h2>Sag Hallo</h2>
+      </div>
+      <div class="contact-grid reveal">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+          </div>
+          <div class="form-row">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+          <div class="form-row">
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Nachricht senden</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+        <div class="contact-info">
+          <h3>NIC – Studierendenclub</h3>
+          <p>E-Mail: <a href="mailto:info@example.com">info@example.com</a></p>
+          <p>Instagram: <a href="#" onclick="return false;">@nic.club</a></p>
+          <p>Wir freuen uns über jede Nachricht – egal ob Frage, Idee oder Kooperationsanfrage.</p>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 NIC</p>
+  <footer class="site-footer">
+    <p>&copy; 2026 NIC – Studierendenclub</p>
+    <div class="footer-links">
+      <a href="#about">Über uns</a>
+      <a href="#events">Events</a>
+      <a href="#contact">Kontakt</a>
+    </div>
   </footer>
 
   <script src="script.js"></script>
